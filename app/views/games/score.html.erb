@@ -1,0 +1,10 @@
+<h1>Results</h1>
+<% if @include %>
+<% if @english_word %>
+<p><strong>Congratulations</strong> <%= @word %>is a valid english word</p>
+<%  else %>
+<p>sorry but <%= @word  %> does not sseem to be a valid word</p>
+<% end %>
+<% else %>
+<p>sorry but <%= @word  %> cant be build out of <%= @letters.join(",") %> </p>
+<% end %>
